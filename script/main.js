@@ -18,21 +18,21 @@
 
    //add the images to the bottom ofthe page
    objectIndex.images.forEach(function(img, index) {
-     //create and image element
-     let newSubImg = document.createElement('img');
+       //create and image element
+       let newSubImg = document.createElement('img');
 
-     //add a css class to it
-     newSubImg.classList.add('thumb');
+       //add a css class to it
+       newSubImg.classList.add('thumb');
 
-     //change src propertie
-     newSubImg.src = 'images/' + objectIndex.images[index];
+       //change src propertie
+       newSubImg.src = 'images/' + objectIndex.images[index];
 
-     newSubImg.dataset.index = index;
+       newSubImg.dataset.index = index;
 
-     //add an event handler to trigger a lightbox
-     newSubImg.addEventListener('click', popLightbox, false);
+       //add an event handler to trigger a lightbox
+       newSubImg.addEventListener('click', function() { popLightbox(index, objectIndex); }, false);
 
-     subImages.appendChild(newSubImg);
+       subImages.appendChild(newSubImg);
    });
 
    subhead.classList.remove(appliedClass);
@@ -52,10 +52,28 @@
    img.addEventListener('click', changeElements, false);
  });
 
- function popLightbox() {
-   debugger;
+ function popLightbox(currentIndex, currentObject) {
+   //debugger;
+   //move the window to the top everytime we click - quick bug fix
+   window.scrollTo(0,0);
+   document.body.style.overflow = "hidden";
+   //trigger the lightbox overlay so that we can see it!
    let lightbox = document.querySelector('.lightbox');
+   let lightboxImg = lightbox.querySelector('img');
+   let lightboxDesc = lightbox.querySelector('p');
+   let lightboxClose = document.querySelector('.close_lightbox');
+
+
    lightbox.style.display = 'block';
+   lightboxImg.src = "images/" + currentObject.images[currentIndex];
+   lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
+
+   lightboxClose.addEventListener('click', closeLightbox, false);
+ }
+
+ function closeLightbox() {
+   //reset everything, close the lightbox
+   debugger;
  }
 
  //document.querySelector('#spring').click();
