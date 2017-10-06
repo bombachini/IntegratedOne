@@ -3,6 +3,7 @@
 body { background: #000; color: #FFF; font-size: 16px; }
 
 h1, h2 { font-family: 'Mystery Quest', cursive; }
+p { font-family: 'Helvetica', 'Arial', sans-serif; }
 
 section, article, .subImagesContainer { position: relative; width: 635px; margin: 0 auto; border: 0; }
 
@@ -55,11 +56,7 @@ section { margin-top: 15px; background-color: #FFF; }
 
 .subImagesContainer { padding: 0; }
 
-.subImagesContainer li {
-	margin: 20px;
-}
-
-.thumb { height: 90px; margin: 20px; cursor: pointer; }
+.thumb { height: 100px; margin: 23px; cursor: pointer; }
 
 .lightbox {
 	position: absolute;
@@ -70,6 +67,7 @@ section { margin-top: 15px; background-color: #FFF; }
 	height: 100%;
 	background-color: rgba(0,0,0,0.85);
 	color:white;
+	text-align: center;
 }
 .close-lightbox {
 	float: right;
@@ -80,4 +78,9 @@ section { margin-top: 15px; background-color: #FFF; }
 }
 .lightbox-img {
 	display: block;
+	width: 650px;
+	margin: 40px auto;
+}
+.lightbox p {
+	font-size: 18px;
 }
