@@ -3,6 +3,7 @@
 body { background: #000; color: #FFF; font-size: 16px; }
 
 h1, h2 { font-family: 'Mystery Quest', cursive; }
+p { font-family: 'Helvetica', 'Arial', sans-serif; }
 
 section, article, .subImagesContainer { position: relative; width: 635px; margin: 0 auto; border: 0; }
 
@@ -55,4 +56,31 @@ section { margin-top: 15px; background-color: #FFF; }
 
 .subImagesContainer { padding: 0; }
 
-.thumb { height: 90px; margin: 8px; cursor: pointer; }
+.thumb { height: 100px; margin: 23px; cursor: pointer; }
+
+.lightbox {
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.85);
+	color:white;
+	text-align: center;
+}
+.close-lightbox {
+	float: right;
+	margin-right: 18px;
+	margin-top: 12px;
+	font-size: 2em;
+	cursor: pointer;
+}
+.lightbox-img {
+	display: block;
+	width: 650px;
+	margin: 40px auto;
+}
+.lightbox p {
+	font-size: 18px;
+}

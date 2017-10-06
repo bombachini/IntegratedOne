@@ -6,7 +6,19 @@ var dynamicContent = {
 
 			images : [
 				"spring_1.jpg",
-				"spring_2.jpg"
+				"spring_2.jpg",
+				"spring_3.jpg",
+				"spring_4.jpg",
+				"spring_5.jpg",
+				"spring_6.jpg"
+			],
+			imageDescription : [
+				"Pretty bunch of butterflies.",
+				"Animals all over the place.",
+				"Tulips, flowers, lovely blooming, everywhere.",
+				"Go outside, enjoy the weather.",
+				"Blooming sakuras on Japan.",
+				"Enjoy the weather, seriously."
 			]
 		},
 
@@ -17,7 +29,19 @@ var dynamicContent = {
 
 			images : [
 				"summer_1.jpg",
-				"summer_2.jpg"
+				"summer_2.jpg",
+				"summer_3.jpg",
+				"summer_4.jpg",
+				"summer_5.jpg",
+				"summer_6.jpg"
+			],
+			imageDescription : [
+				"Come here and have a seat.",
+				"Life goal",
+				"Bye sun, see you soon.",
+				"Sand, coconut water, sunglasses.",
+				"Where to go on summer? Beach please.",
+				"The warmest sunsets."
 			]
 		},
 
@@ -28,7 +52,19 @@ var dynamicContent = {
 
 			images : [
 				"autumn_1.jpg",
-				"autumn_2.jpg"
+				"autumn_2.jpg",
+				"autumn_3.jpg",
+				"autumn_4.jpg",
+				"autumn_5.jpg",
+				"autumn_6.jpg",
+			],
+			imageDescription : [
+				"Reddish pathway.",
+				"Pumpkin pies with sunflower seeds.",
+				"Trees, sky and a good point of view.",
+				"Meditation on the lake.",
+				"Orange leaves.",
+				"Such a beatiful bench."
 			]
 		},
 
@@ -39,7 +75,19 @@ var dynamicContent = {
 
 			images : [
 				"winter_1.jpg",
-				"winter_2.jpg"
+				"winter_2.jpg",
+				"winter_3.jpg",
+				"winter_4.jpg",
+				"winter_5.jpg",
+				"winter_6.jpg",
+			],
+			imageDescription : [
+				"Cold sunrise.",
+				"Let it go, let it goooo...",
+				"Pathway to the trees.",
+				"Froze lake.",
+				"White road.",
+				"Winter on the mountains."
 			]
 		}
 	};
