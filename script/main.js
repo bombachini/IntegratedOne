@@ -3,6 +3,7 @@
  var heading = document.querySelector('.heading');
  var subhead = document.querySelector('.main-copy h2');
  var seasonText = document.querySelector('.main-copy p');
+ var lightbox = document.querySelector('.lightbox');
  var appliedClass;
 
  //change all the content on the page
@@ -37,6 +38,7 @@
 
    subhead.classList.remove(appliedClass);
    heading.classList.remove(appliedClass);
+   seasonText.innerHTML = "null";
 
    subhead.firstChild.nodeValue = objectIndex.headline;
    seasonText.firstChild.nodeValue = objectIndex.text;
@@ -58,7 +60,7 @@
    window.scrollTo(0,0);
    document.body.style.overflow = "hidden";
    //trigger the lightbox overlay so that we can see it!
-   let lightbox = document.querySelector('.lightbox');
+   //let lightbox = document.querySelector('.lightbox');
    let lightboxImg = lightbox.querySelector('img');
    let lightboxDesc = lightbox.querySelector('p');
    let lightboxClose = document.querySelector('.close-lightbox');
@@ -73,7 +75,7 @@
  function closeLightbox() {
    //reset everything, close the lightbox
    //debugger;
-   let lightbox = document.querySelector('.lightbox');
+   //let lightbox = document.querySelector('.lightbox');
 
    lightbox.style.display = 'none';
    document.body.style.overflow = "scroll";

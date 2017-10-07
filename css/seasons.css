@@ -56,7 +56,7 @@ section { margin-top: 15px; background-color: #FFF; }
 
 .subImagesContainer { padding: 0; }
 
-.thumb { height: 100px; margin: 23px; cursor: pointer; }
+.thumb { height: 100px; width: 160px; margin: 25px; cursor: pointer; }
 
 .lightbox {
 	position: absolute;
